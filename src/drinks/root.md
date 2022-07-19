@@ -1,7 +1,7 @@
 ---
 title: Root
 date: 2022-07-13
-image: /drinks/root.jpg
+image: root.jpg
 ingredients:
   - 1½ oz. Buffalo Trace Bourbon
   - 1 oz. Barrel Bourbon

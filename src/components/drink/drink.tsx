@@ -5,10 +5,10 @@ import {
   ListItem,
   Grid,
   GridItem,
-  Img,
   Heading,
   OrderedList,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import type { DrinkType } from "../../types";
 
 export const Drink = ({
@@ -21,8 +21,16 @@ export const Drink = ({
 }: DrinkType) => {
   return (
     <Box>
-      <Box marginBottom="4">
-        <Img src={image} borderRadius="md" />
+      <Box marginBottom="4" borderRadius="md" overflow="hidden" display="flex">
+        {image && (
+          <Image
+            src={require(`../../img/${image}`)}
+            width="1024"
+            height="680"
+            quality="95"
+            placeholder="blur"
+          />
+        )}
       </Box>
       <Heading as="h2" size="md" marginBottom="4">
         {title}
