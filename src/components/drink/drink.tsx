@@ -29,6 +29,7 @@ export const Drink = ({
             height="680"
             quality="95"
             placeholder="blur"
+            alt={title || ""}
           />
         )}
       </Box>
